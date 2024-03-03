@@ -26,7 +26,7 @@ struct QuestionView: View {
 }
 
 #Preview {
-    QuestionView(question: "", buttonStates: .constant([true, false, false]), updateButtonStates: { index in
+    QuestionView(question: "", buttonStates: .constant([true, false, false, false]), updateButtonStates: { index in
         print("Button at index \(index) tapped")
         
     })

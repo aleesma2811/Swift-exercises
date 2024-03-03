@@ -16,8 +16,11 @@ struct SelectButton: View {
             HStack {
                 Capsule()
                     .frame(width: 50, height: 50)
-                .foregroundColor(isSelected ? color : .gray)
+                    .foregroundColor(isSelected ? color : .gray)
             } //If the button is selected, the button will be gray
+            .onTapGesture {
+                isSelected.toggle()
+            }
         }
     }
 }
