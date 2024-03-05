@@ -10,17 +10,24 @@ import SwiftUI
 struct QuestionView: View {
     var question: String
     @Binding var buttonStates: [Bool]
+    @State private var selectedButtonIndex: Int? = nil
+    
     var updateButtonStates: (Int) -> Void
     var body: some View {
-        Text(question)
-        HStack {
-            Text("En completo \ndesacuerdo")
-            ForEach (buttonStates.indices, id: \.self) { index in
-                SelectButton(
-                    isSelected: self.$buttonStates[index],
-                    color: .blue)
+        
+        VStack {
+            Text(question)
+            
+            HStack (spacing: 40) {
+                Text("En completo \ndesacuerdo")
+                ForEach (buttonStates.indices, id: \.self) { index in
+                    SelectButton(
+                        isSelected: self.$buttonStates[index],
+                        color: .blue)
+                }
+                Text("Completamente \nde acuerdo")
+                    .foregroundColor(Color("AzulLetra"))
             }
-            Text("Completamente \nde acuerdo")
         }
     }
 }

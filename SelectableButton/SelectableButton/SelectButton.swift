@@ -15,7 +15,7 @@ struct SelectButton: View {
         ZStack {
             HStack {
                 Capsule()
-                    .frame(width: 50, height: 50)
+                    .frame(width: 30, height: 30)
                     .foregroundColor(isSelected ? color : .gray)
             } //If the button is selected, the button will be gray
             .onTapGesture {

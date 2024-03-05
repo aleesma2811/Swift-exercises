@@ -16,6 +16,8 @@
 		0912FBD12B9182530080B893 /* SelectableButtonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0912FBD02B9182530080B893 /* SelectableButtonUITestsLaunchTests.swift */; };
 		0912FBDE2B91827A0080B893 /* SelectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0912FBDD2B91827A0080B893 /* SelectButton.swift */; };
 		093A02D62B94418F00CCFE53 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093A02D52B94418F00CCFE53 /* QuestionView.swift */; };
+		0983746E2B96C48B00E3D121 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983746D2B96C48B00E3D121 /* RectangleView.swift */; };
+		098374702B96D34400E3D121 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0983746F2B96D34400E3D121 /* ProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		0912FBD02B9182530080B893 /* SelectableButtonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableButtonUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0912FBDD2B91827A0080B893 /* SelectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectButton.swift; sourceTree = "<group>"; };
 		093A02D52B94418F00CCFE53 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		0983746D2B96C48B00E3D121 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
+		0983746F2B96D34400E3D121 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,9 @@
 			children = (
 				0912FBB32B9182500080B893 /* SelectableButtonApp.swift */,
 				0912FBB52B9182500080B893 /* ContentView.swift */,
+				0983746F2B96D34400E3D121 /* ProgressView.swift */,
 				093A02D52B94418F00CCFE53 /* QuestionView.swift */,
+				0983746D2B96C48B00E3D121 /* RectangleView.swift */,
 				0912FBDD2B91827A0080B893 /* SelectButton.swift */,
 				0912FBB72B9182520080B893 /* Assets.xcassets */,
 				0912FBB92B9182520080B893 /* Preview Content */,
@@ -267,6 +273,8 @@
 				0912FBDE2B91827A0080B893 /* SelectButton.swift in Sources */,
 				0912FBB62B9182500080B893 /* ContentView.swift in Sources */,
 				0912FBB42B9182500080B893 /* SelectableButtonApp.swift in Sources */,
+				0983746E2B96C48B00E3D121 /* RectangleView.swift in Sources */,
+				098374702B96D34400E3D121 /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
