@@ -17,9 +17,11 @@ struct QuestionView: View {
         
         VStack {
             Text(question)
+                .font(Font.custom("PT Sans", size: 23))
             
             HStack (spacing: 40) {
                 Text("En completo \ndesacuerdo")
+                    .font(Font.custom("PT Sans", size: 19))
                 ForEach (buttonStates.indices, id: \.self) { index in
                     SelectButton(
                         isSelected: self.$buttonStates[index],
@@ -27,6 +29,7 @@ struct QuestionView: View {
                 }
                 Text("Completamente \nde acuerdo")
                     .foregroundColor(Color("AzulLetra"))
+                    .font(Font.custom("PT Sans", size: 19))
             }
         }
     }

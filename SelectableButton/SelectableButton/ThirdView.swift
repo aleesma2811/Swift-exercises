@@ -1,15 +1,15 @@
 //
-//  ContentView.swift
+//  ThirdView.swift
 //  SelectableButton
 //
-//  Created by Alejandra Escallada Martínez on 29/02/24.
+//  Created by Alejandra Escallada Martínez on 05/03/24.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct ThirdView: View {
     // Barra de prorgeso
-    @State var percent: CGFloat = 32
+    @State var percent: CGFloat = 100
     
     // Botones
     @State private var buttonStates: [[Bool]] = Array(repeating: Array(repeating: false, count: 4), count: 11)
@@ -22,8 +22,6 @@ struct ContentView: View {
             buttonStates[row][buttonIndex] = buttonIndex == index
         }
     }
-    
-    
     var body: some View {
         VStack {
             // Cheat Rectangle
@@ -95,5 +93,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ThirdView()
 }

@@ -1,15 +1,15 @@
 //
-//  ContentView.swift
+//  SecondView.swift
 //  SelectableButton
 //
-//  Created by Alejandra Escallada Martínez on 29/02/24.
+//  Created by Alejandra Escallada Martínez on 05/03/24.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct SecondView: View {
     // Barra de prorgeso
-    @State var percent: CGFloat = 32
+    @State var percent: CGFloat = 66
     
     // Botones
     @State private var buttonStates: [[Bool]] = Array(repeating: Array(repeating: false, count: 4), count: 11)
@@ -22,8 +22,6 @@ struct ContentView: View {
             buttonStates[row][buttonIndex] = buttonIndex == index
         }
     }
-    
-    
     var body: some View {
         VStack {
             // Cheat Rectangle
@@ -79,7 +77,7 @@ struct ContentView: View {
                     }
                     .padding()
                     .fullScreenCover(isPresented: $showingSecondView) {
-                                    SecondView()
+                                    ThirdView()
                                 }
                 }
                 .frame(maxWidth: .infinity)
@@ -95,5 +93,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    SecondView()
 }
